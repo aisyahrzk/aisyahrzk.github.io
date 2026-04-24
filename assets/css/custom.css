@@ -4,11 +4,15 @@
 }
 
 /* Smaller page titles */
-.page-content h1, .post h1 {
-  font-size: 1.8rem;
+.post-title.p-name {
+  font-size: 1.1rem !important;
+}
+
+.post-title h1, .post h1 {
+  font-size: 1.1rem !important;
 }
 
 /* Smaller site title in header */
 .site-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
