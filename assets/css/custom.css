@@ -1,0 +1,14 @@
+/* Smaller post titles */
+.post-link {
+  font-size: 1.5rem;
+}
+
+/* Smaller page titles */
+.page-content h1, .post h1 {
+  font-size: 1.8rem;
+}
+
+/* Smaller site title in header */
+.site-title {
+  font-size: 1.5rem;
+}
