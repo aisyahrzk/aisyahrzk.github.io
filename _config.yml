@@ -1,0 +1,40 @@
+# Site settings
+title: Your Name
+description: Your tagline or description
+baseurl: "" # Leave empty for GitHub Pages
+url: "https://yourusername.github.io" # Your GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .gitignore
+  - README.md
+
+# Post settings
+excerpt_separator: <!--more-->
+
+# Navigation
+nav:
+  - title: Home
+    url: /
+  - title: About
+    url: /about
+
+# Collections
+collections:
+  pages:
+    output: true
+    permalink: /:path/
