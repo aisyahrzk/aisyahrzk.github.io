@@ -1,22 +1,16 @@
 ---
 layout: default
+title: About
 ---
 
-<div class="container about-page">
-  <h1>About</h1>
+# Hi, I'm Aisyah Razak 👋
 
-  <p>Write your about page content here. Tell your readers about yourself, your background, and what they can expect from this blog.</p>
+Welcome to my personal blog where I share my thoughts and experiences.
 
-  <h2>Topics I Write About</h2>
-  <ul>
-    <li>Topic 1</li>
-    <li>Topic 2</li>
-    <li>Topic 3</li>
-  </ul>
+## About Me
 
-  <h2>Contact</h2>
-  <p>You can find me on:
-    <a href="https://github.com/yourusername">GitHub</a> |
-    <a href="https://twitter.com/yourusername">Twitter</a>
-  </p>
-</div>
+I'm a developer passionate about building things and learning new technologies.
+
+## Connect
+
+- [GitHub](https://github.com/aisyahrzk)
