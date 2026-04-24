@@ -5,7 +5,8 @@
 
 /* Smaller page titles */
 .page-content h1, .post h1 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
+  line-height: 1.4;
 }
 
 /* Smaller site title in header */
