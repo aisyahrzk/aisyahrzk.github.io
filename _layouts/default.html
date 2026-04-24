@@ -1,0 +1,25 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-to-main" href="#content">Skip to main content</a>
+    {% include icon.html %}
+    <div class="wrapper">
+      {% include header.html %}
+      <main id="content" class="page-content" aria-label="Content">
+        {{ content }}
+      </main>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
