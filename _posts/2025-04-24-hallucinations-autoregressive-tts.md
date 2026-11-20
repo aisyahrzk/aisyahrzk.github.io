@@ -3,6 +3,7 @@ layout: post
 title: "A Breakdown of Failure Modes in Autoregressive TTS?"
 date: 2025-04-24 10:00 +0700
 categories: research ml
+published: false
 ---
 
 I've been working on finetuning autoregressive text to speech models for almost a year now, and there's a lot of lesson I've learnt along the way. Instead of writing about how to train models, I've taken a bit of interest in interpreting and understanding how model works internally. This post will be my trial to try my best to explain what happens in the back when we generate speech from tokens. We will explore the phenomenon in which an autoregressive TTS model hallucinates.
