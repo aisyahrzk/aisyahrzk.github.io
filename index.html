@@ -1,45 +1,23 @@
 ---
 layout: default
 ---
-<header class="hero">
-  <div class="hero-text">
-    <h1>Aisyah Razak</h1>
-    <p class="tagline">ML research engineer at <a href="https://revolab.ai">Revolab AI</a>, working on speech and foundation models for Malaysian languages. Notes on things I'm learning along the way.</p>
-    <nav class="links" aria-label="Profiles">
-      <a href="mailto:aisyahrazak171@gmail.com">Email</a>
-      <a href="https://github.com/aisyahrzk">GitHub</a>
-      <a href="https://huggingface.co/aisyahhrazak">Hugging Face</a>
-      <a href="https://www.linkedin.com/in/aisyahh-razak/">LinkedIn</a>
-      <a href="{{ '/cv/' | relative_url }}">CV</a>
-    </nav>
-  </div>
-  <!-- Put a square photo at assets/images/profile.jpg. Falls back to initials. -->
-  <div class="avatar">
-    <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Aisyah Razak" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-    <div class="avatar-fallback" aria-hidden="true">AR</div>
-  </div>
-</header>
+<h1 class="page-title">Writing</h1>
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%-d %b %Y" }}</span>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">Nothing here yet.</p>
+{% endif %}
 
-<section id="writing">
-  <h2>Writing</h2>
-  {% if site.posts.size > 0 %}
-  <ul class="post-list">
-    {% for post in site.posts limit: 10 %}
-    <li>
-      <span class="post-date">{{ post.date | date: "%b %Y" }}</span>
-      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    </li>
-    {% endfor %}
-  </ul>
-  {% if site.posts.size > 10 %}<p class="more"><a href="{{ '/blog/' | relative_url }}">All posts →</a></p>{% endif %}
-  {% else %}
-  <p class="muted">Nothing here yet.</p>
-  {% endif %}
-
-  <h3 class="sub">Elsewhere</h3>
-  <ul class="post-list">
-    <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/autoregressive-tts-failure-modes/">Failure Modes in Autoregressive TTS</a></li>
-    <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/how-we-built-asr-for-malaysia/">How We Built Speech Recognition for Malaysia</a></li>
-    <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/malaysian-asr-benchmark-dataset/">Malaysian Speech Benchmark Dataset</a></li>
-  </ul>
-</section>
+<h3 class="sub">Elsewhere</h3>
+<ul class="post-list">
+  <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/autoregressive-tts-failure-modes/">Failure Modes in Autoregressive TTS</a></li>
+  <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/how-we-built-asr-for-malaysia/">How We Built Speech Recognition for Malaysia</a></li>
+  <li><span class="post-date">Revolab</span><a href="https://revolab.ai/blogs/malaysian-asr-benchmark-dataset/">Malaysian Speech Benchmark Dataset</a></li>
+</ul>

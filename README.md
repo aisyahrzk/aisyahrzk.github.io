@@ -23,9 +23,9 @@ Commit and push; the site rebuilds in about a minute. To keep a draft out of the
 
 | File | Page |
 |---|---|
-| `index.html` | Home: short bio, recent posts, publications |
-| `blog.html` | All posts |
-| `cv.html` | Selected work, experience, education, skills |
+| `index.html` | Home: list of posts |
+| `about.html` | About page: short intro, photo, links |
+| `cv.html` | Selected work, publications, experience, education, skills |
 | `_layouts/` | Site shell (`default.html`) and post template (`post.html`) |
 | `assets/css/style.css` | Styles, light and dark mode |
 | `assets/images/profile.jpg` | Optional photo (initials shown if missing) |

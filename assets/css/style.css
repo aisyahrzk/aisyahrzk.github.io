@@ -170,3 +170,7 @@ footer { padding-top: 32px; color: var(--muted); font-size: 0.9rem; }
   .post-list li { flex-direction: column; gap: 0; margin-bottom: 14px; }
   .post-date { flex: none; }
 }
+
+/* ---------- About ---------- */
+.prose { padding-top: 28px; font-size: 1.05rem; }
+.prose p { margin-bottom: 1.1em; }

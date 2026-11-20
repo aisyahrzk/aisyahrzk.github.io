@@ -17,8 +17,8 @@
   <nav class="topnav" aria-label="Site">
     <a class="brand" href="{{ '/' | relative_url }}">Aisyah Razak</a>
     <div class="topnav-links">
-      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="active"{% endif %}>Home</a>
-      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains "/blog/" %} class="active"{% endif %}>Blog</a>
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" or page.layout == "post" %} class="active"{% endif %}>Home</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == "/about/" %} class="active"{% endif %}>About</a>
       <a href="{{ '/cv/' | relative_url }}"{% if page.url == "/cv/" %} class="active"{% endif %}>CV</a>
     </div>
   </nav>
