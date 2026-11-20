@@ -28,7 +28,7 @@ Commit and push; the site rebuilds in about a minute. To keep a draft out of the
 | `cv.html` | Selected work, publications, experience, education, skills |
 | `_layouts/` | Site shell (`default.html`) and post template (`post.html`) |
 | `assets/css/style.css` | Styles, light and dark mode |
-| `assets/images/profile.jpg` | Optional photo (initials shown if missing) |
+| `assets/images/cat.svg` | Avatar on the About page and the tab icon |
 
 ## Local preview
 

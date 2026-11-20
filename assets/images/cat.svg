@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" role="img" aria-label="A cute cat">
+  <!-- background circle -->
+  <circle cx="100" cy="100" r="100" fill="#dfe8f3"/>
+
+  <!-- tail -->
+  <path d="M148 158 C176 150 182 124 168 112" fill="none" stroke="#1f3a5f" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- body -->
+  <ellipse cx="100" cy="156" rx="50" ry="38" fill="#1f3a5f"/>
+
+  <!-- ears -->
+  <path d="M56 84 Q52 48 62 42 Q84 50 94 62 Z" fill="#1f3a5f"/>
+  <path d="M144 84 Q148 48 138 42 Q116 50 106 62 Z" fill="#1f3a5f"/>
+  <path d="M63 78 Q61 56 66 51 Q80 58 86 66 Z" fill="#f4b6c2"/>
+  <path d="M137 78 Q139 56 134 51 Q120 58 114 66 Z" fill="#f4b6c2"/>
+
+  <!-- head -->
+  <circle cx="100" cy="104" r="50" fill="#1f3a5f"/>
+
+  <!-- eyes -->
+  <ellipse cx="80" cy="100" rx="7" ry="9" fill="#ffffff"/>
+  <ellipse cx="120" cy="100" rx="7" ry="9" fill="#ffffff"/>
+  <circle cx="81" cy="102" r="4" fill="#15171b"/>
+  <circle cx="121" cy="102" r="4" fill="#15171b"/>
+  <circle cx="83" cy="99" r="1.5" fill="#ffffff"/>
+  <circle cx="123" cy="99" r="1.5" fill="#ffffff"/>
+
+  <!-- blush -->
+  <circle cx="66" cy="114" r="6" fill="#f4b6c2" opacity="0.8"/>
+  <circle cx="134" cy="114" r="6" fill="#f4b6c2" opacity="0.8"/>
+
+  <!-- nose and mouth -->
+  <path d="M96 114 L104 114 L100 119 Z" fill="#f4b6c2"/>
+  <path d="M100 119 Q96 125 91 122 M100 119 Q104 125 109 122" fill="none" stroke="#dfe8f3" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- whiskers -->
+  <g stroke="#dfe8f3" stroke-width="2" stroke-linecap="round">
+    <path d="M58 108 L40 104"/><path d="M58 116 L40 118"/>
+    <path d="M142 108 L160 104"/><path d="M142 116 L160 118"/>
+  </g>
+
+  <!-- collar with A tag -->
+  <path d="M62 142 Q100 160 138 142" fill="none" stroke="#f4b6c2" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="100" cy="156" r="12" fill="#fdfcf9"/>
+  <text x="100" y="161.5" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="15" text-anchor="middle" fill="#1f3a5f">A</text>
+
+  <!-- paws -->
+  <ellipse cx="80" cy="184" rx="12" ry="7" fill="#2d5a8f"/>
+  <ellipse cx="120" cy="184" rx="12" ry="7" fill="#2d5a8f"/>
+</svg>
