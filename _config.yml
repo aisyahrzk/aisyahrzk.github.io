@@ -1,14 +1,17 @@
-# Site settings
 title: Aisyah Razak
-description: Blog
+description: ML research engineer working on speech and foundation models for Malaysian languages.
 url: https://aisyahrzk.github.io
+author: Aisyah Razak
 
-# Build settings
 markdown: kramdown
-theme: minima
+permalink: /blog/:year/:title/
+
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
 
-# Minima settings
-minima:
-  skin: solarized
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

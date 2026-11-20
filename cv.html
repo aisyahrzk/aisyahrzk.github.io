@@ -1,0 +1,100 @@
+---
+layout: default
+title: CV
+permalink: /cv/
+---
+<h1 class="page-title">CV</h1>
+<p class="muted">ML research engineer · Kuala Lumpur · <a href="mailto:aisyahrazak171@gmail.com">aisyahrazak171@gmail.com</a></p>
+
+<section id="work">
+  <h2>Selected work</h2>
+
+  <article class="item">
+    <div class="item-head">
+      <h3><a href="https://revolab.ai/blogs/how-we-built-asr-for-malaysia/">Aisyah 1.0 Pro: state-of-the-art Malaysian ASR</a></h3>
+      <span class="when">2025</span>
+    </div>
+    <p>Speech recognition for code-switched Malay–English, trained with transformers, self-supervised learning and
+      multilingual transfer. Ranked 1st of 14 commercial and open-source models with 5.79% WER and the lowest
+      hallucination rate (0.62% invented words). Accuracy holds on unseen data: 4.89% on the public split vs 6.58%
+      on the held-out split. Powers Revolab's public <a href="https://revolab.ai/solutions/speech-api/">Speech Platform API</a>.</p>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <h3><a href="https://revolab.ai/blogs/malaysian-asr-benchmark-dataset/">Malaysian Speech Benchmark &amp; ASR Leaderboard</a></h3>
+      <span class="when">2025</span>
+    </div>
+    <p>1,899 human-annotated samples (4.08 hours) across 12 domains, released as public and private splits, plus a
+      <a href="https://revolab.ai/blogs/malaysian-asr-leaderboard/">public leaderboard</a> where every model output can be inspected.</p>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <h3><a href="https://revolab.ai/blogs/autoregressive-tts-failure-modes/">Failure modes in autoregressive TTS</a></h3>
+      <span class="when">2025</span>
+    </div>
+    <p>Traced repeat/skip failures in Orpheus 3B TTS to three attention heads that track position in the text.
+      Ablating them broke 99.6% of clips, versus 0.9% for three random heads.</p>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <h3><a href="https://arxiv.org/abs/2401.14680">MaLLaM: pretraining a Malaysian LLM from scratch</a></h3>
+      <span class="when">2023–2024</span>
+    </div>
+    <p>With Malaysia AI: multi-node training on 80× A100 80GB GPUs using Ray and DeepSpeed, crawling and filtering a
+      large-scale Malaysian pretraining corpus, full-parameter fine-tuning of Mistral and Llama, and a novel multimodal
+      pretraining method combining CLIP, Whisper and Mistral.</p>
+  </article>
+
+  <article class="item">
+    <div class="item-head">
+      <h3><a href="https://arxiv.org/abs/2407.20729">Safe-for-work classifier for Malaysian text</a></h3>
+      <span class="when">2024</span>
+    </div>
+    <p>Led an active-learning + LLM labelling pipeline producing ~200k labelled samples in three languages.
+      Preprint on arXiv, presented at PyCon Malaysia.</p>
+  </article>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <dl class="timeline">
+    <dt>Feb 2025 – present</dt>
+    <dd><strong>ML Research Engineer</strong>, Revolab AI<br>
+      <span class="muted">Speech foundation models (STT/TTS) for Malaysian and Arabic; benchmarks, interpretability, production deployment.</span></dd>
+    <dt>Jun 2023 – present</dt>
+    <dd><strong>ML Engineer (volunteer)</strong>, Malaysia AI<br>
+      <span class="muted">Malaysian LLM pretraining, multimodal pretraining, multilingual embeddings, Whisper fine-tuning.</span></dd>
+    <dt>Sep 2023 – Feb 2025</dt>
+    <dd><strong>Executive, Advanced Analytics</strong>, Tenaga Nasional Berhad<br>
+      <span class="muted">Built TNB's first ESG Scope 3 emissions pipeline; anomaly detection on electricity time series; enterprise GenAI chatbot on AWS.</span></dd>
+    <dt>Feb – Jun 2023</dt>
+    <dd><strong>Data &amp; AI Intern</strong>, Pandai Education<br>
+      <span class="muted">LLM application (OpenAI, LangChain, pgvector, React, FastAPI); SQL data marts 40% faster.</span></dd>
+  </dl>
+</section>
+
+<section id="education">
+  <h2>Education &amp; awards</h2>
+  <dl class="timeline">
+    <dt>2019 – 2023</dt>
+    <dd><strong>B.Sc. Computer Science (Data Science)</strong>, University of Malaya<br>
+      <span class="muted">First Class Honours, CGPA 3.77</span></dd>
+    <dt>2024</dt><dd>ML Olympiad, AI &amp; ML Malaysia — 4th of 90</dd>
+    <dt>2024</dt><dd>Tech To The Rescue Air Quality Hackathon — top 3 (satellite &amp; weather data over Taiwan)</dd>
+    <dt>2023</dt><dd>Bengali.AI Speech Recognition (Kaggle) — bronze medal, top 10%</dd>
+    <dt></dt><dd>AWS Certified Machine Learning – Specialty</dd>
+  </dl>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Training</dt><dd>PyTorch, DeepSpeed, Ray, Hugging Face Transformers, multi-node distributed training, self-supervised learning</dd>
+    <dt>Data &amp; evaluation</dt><dd>corpus crawling and curation, benchmark design, held-out evaluation, ablations, geospatial data (Geopandas)</dd>
+    <dt>Languages</dt><dd>Python, SQL, R, Bash</dd>
+    <dt>Infrastructure</dt><dd>AWS, Docker, Git, FastAPI</dd>
+  </dl>
+</section>

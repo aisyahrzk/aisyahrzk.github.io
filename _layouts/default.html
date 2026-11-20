@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.title and page.url != "/" %}<title>{{ page.title }} · {{ site.title }}</title>{% else %}<title>{{ site.title }}</title>{% endif %}
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231f3a5f'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif'>A</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% seo title=false %}
+  {% feed_meta %}
+</head>
+<body>
+<div class="page">
+  <nav class="topnav" aria-label="Site">
+    <a class="brand" href="{{ '/' | relative_url }}">Aisyah Razak</a>
+    <div class="topnav-links">
+      <a href="{{ '/' | relative_url }}"{% if page.url == "/" %} class="active"{% endif %}>Home</a>
+      <a href="{{ '/blog/' | relative_url }}"{% if page.url contains "/blog/" %} class="active"{% endif %}>Blog</a>
+      <a href="{{ '/cv/' | relative_url }}"{% if page.url == "/cv/" %} class="active"{% endif %}>CV</a>
+    </div>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>© {{ site.time | date: "%Y" }} Aisyah Razak ·
+      <a href="mailto:aisyahrazak171@gmail.com">Email</a> ·
+      <a href="https://github.com/aisyahrzk">GitHub</a> ·
+      <a href="https://huggingface.co/aisyahhrazak">Hugging Face</a> ·
+      <a href="https://www.linkedin.com/in/aisyahh-razak/">LinkedIn</a> ·
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </p>
+  </footer>
+</div>
+</body>
+</html>
