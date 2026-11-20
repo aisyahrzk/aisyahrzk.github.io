@@ -70,8 +70,8 @@ p { margin: 0 0 1em; }
 
 .avatar { flex: 0 0 auto; width: 136px; height: 136px; }
 .avatar img, .avatar-fallback {
-  width: 136px; height: 136px; border-radius: 50%;
-  object-fit: cover;
+  width: 136px; height: 136px; border-radius: 16px;
+  object-fit: cover; image-rendering: pixelated;
 }
 .avatar-fallback {
   display: none;
